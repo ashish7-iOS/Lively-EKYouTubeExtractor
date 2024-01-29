@@ -59,11 +59,11 @@ public class EKYouTubeExtractor {
     var formatMap = Dictionary<String, Format>()
     var videoMeta: VideoMeta?
     
-    let sessionManager: SessionManager = {
+    let sessionManager: Session = {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 10
         
-        return SessionManager(configuration: configuration)
+        return Session(configuration: configuration)
     }()
     
     public static let shared: EKYouTubeExtractor = {
