@@ -14,7 +14,7 @@ let package = Package(
             targets: ["EKYouTubeExtractor"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ashish7-iOS/Lively-EKYouTubeExtractor.git", from: "1.0.1"),
+        .package(url: "https://github.com/ashish7-iOS/Lively-EKYouTubeExtractor.git", .branch("develop")),
     ],
     targets: [
         .target(
